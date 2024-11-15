@@ -1,0 +1,28 @@
+MODEL:
+  TEMPERATURE: 0.2
+  STREAM: TRUE
+  SERVICE: openai # [ ollama, openai, groq, gemini ]
+  MODEL_ID: gpt-4o-mini
+
+CONTEXTUAL_RAG:
+  CHUNK_SIZE: 2048
+  SERVICE: openai
+  MODEL: "gpt-4o-mini"
+
+  ORIGIN_RAG_COLLECTION_NAME: "original_rag"
+  CONTEXTUAL_RAG_COLLECTION_NAME: "contextual_rag"
+
+  QDRANT_URL: "http://localhost:6333"
+
+  ELASTIC_SEARCH_URL: "http://localhost:9200"
+  ELASTIC_SEARCH_INDEX_NAME: "contextual_rag"
+
+  NUM_CHUNK_TO_RECALL: 150
+
+  SEMANTIC_WEIGHT: 0.8
+  BM25_WEIGHT: 0.2
+
+  TOP_N: 3
+
+AGENT:
+  TYPE: "openai" # [openai, react]
