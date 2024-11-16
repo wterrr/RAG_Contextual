@@ -83,7 +83,7 @@ CONTEXTUAL_RAG:
 ```yml
     ...
 AGENT:
-    TYPE: <fill here> # [openai, react]
+    TYPE: <fill here> # [openai]
 ```
 
 Currently support:
