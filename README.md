@@ -86,12 +86,11 @@ AGENT:
     TYPE: <fill here> # [openai, react]
 ```
 
-Currently, we support:
+Currently support:
 
 |   TYPE   |     Agent     |
 | :------: | :-----------: |
 | `openai` | `OpenAIAgent` |
-| `react`  | `ReActAgent`  |
 
 **8. Setup API Keys:** Please create `.env` file and provide these API keys:
 
